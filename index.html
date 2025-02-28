@@ -1,15 +1,287 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output/output.css" />
   </head>
-  <body>
-    <h1 class="bg-red-500 text-2xl">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum,
-      voluptatem?
-    </h1>
+  <body class="h-100vh bg-blueExtraLight" id="bg">
+    <header class="pt-6">
+      <nav class="mx-auto max-w-[1535px] rounded-2xl bg-white px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <img class="mr-3 h-auto w-9" src="./assets/logo.png" alt="" />
+            <h1 class="text-4xl font-bold">
+              <span class="font-thin">Dev</span>Board
+            </h1>
+          </div>
+          <div class="flex items-center gap-9">
+            <div
+              class="flex items-center rounded-full bg-blueExtraLight px-4 py-2"
+            >
+              <img class="mr-4 h-auto w-5" src="./assets/checkbox.png" alt="" />
+              <span class="text-3xl font-bold">22</span>
+            </div>
+            <img
+              class="h-auto w-12 cursor-pointer rounded-full bg-blueExtraLight p-2"
+              src="./assets/theme-btn.png"
+              alt=""
+              id="theme-btn"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mx-auto mt-6 grid max-w-[1535px] grid-cols-4 gap-6 pb-20">
+      <section class="col-start-1 col-end-4 rounded-2xl bg-white">
+        <section
+          class="flex gap-6 border-b-1 border-dashed border-b-blue/20 p-6"
+        >
+          <div class="flex-1 rounded-2xl bg-blueExtraLight">
+            <div class="flex items-center p-6">
+              <span
+                class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
+              >
+                <img class="h-auto w-5" src="./assets/checkbox.png" alt="" />
+              </span>
+              <div>
+                <p class="font-medium text-nowrap">Task Assigned</p>
+                <p class="text-3xl font-bold">0</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-2 cursor-pointer items-center rounded-2xl bg-gradient-to-l from-blueLight to-blue p-6"
+          >
+            <img class="mr-4 h-auto w-15" src="./assets/board.png" alt="" />
+            <h3 class="text-2xl font-medium text-white">
+              Discover Something <br />
+              New Today!
+            </h3>
+          </div>
+          <div class="flex-1 rounded-2xl bg-blueExtraLight">
+            <div class="flex items-center p-6">
+              <span
+                class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
+              >
+                <img class="h-auto w-5" src="./assets/calender.png" alt="" />
+              </span>
+              <div>
+                <p class="text-xl">Wed,</p>
+                <p class="text-xl font-bold">Jul 28 2025</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="grid grid-cols-3 gap-6 p-6">
+          <!-- !Fix Mobile  -->
+          <div class="rounded-2xl bg-blueExtraLight p-5">
+            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+              >ShopEase</span
+            >
+            <h2 class="my-4 text-xl font-medium">Fix Mobile Button Issue</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly and ensure onClick works properly
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <!--! Dark Mode -->
+          <div class="rounded-2xl bg-blueExtraLight p-5">
+            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+              >CloudSync</span
+            >
+            <h2 class="my-4 text-xl font-medium">Add Dark Mode</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+              >
+                Store the user's preference in localStorage, update CSS
+                variables dynamically, and apply a smooth transition effect.
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- !Optimize Home page -->
+          <div class="rounded-2xl bg-blueExtraLight p-5">
+            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+              >SwiftPay</span
+            >
+            <h2 class="my-4 text-xl font-medium">Optimize Home page </h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly and ensure onClick works properly
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+
+          <!-- ! add Emoji Section -->
+          <div class="rounded-2xl bg-blueExtraLight p-5">
+            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+              >Meta</span
+            >
+            <h2 class="my-4 text-xl font-medium">Add new emoji 🤲</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly and ensure onClick works properly
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- ! Integrate OpenAI API  -->
+          <div class="rounded-2xl bg-blueExtraLight p-5">
+            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+              >Google LLC</span
+            >
+            <h2 class="my-4 text-xl font-medium">Integrate OpenAI API</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly and ensure onClick works properly
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- !Improve Job searching  -->
+          <div class="rounded-2xl bg-blueExtraLight p-5">
+            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+              >Glassdoor</span
+            >
+            <h2 class="my-4 text-xl font-medium">Improve Job searching</h2>
+
+            <div class="mb-4 rounded-md bg-white p-4">
+              <div
+                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure onClick works properly and ensure onClick works properly
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+            >
+              <div>
+                <p class="text-sm opacity-80">Deadline</p>
+                <h3 class="font-semibold">21 March 2025</h3>
+              </div>
+              <button
+                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+      <aside class="col-start-4 col-end-5 rounded-2xl bg-white">
+        <section class="border-b-1 border-dashed border-b-blue/20 p-6">
+          <div class="mx-auto w-full text-center">
+            <div class="flex items-center justify-center">
+              <img class="mr-3 h-auto w-5" src="./assets/activity.png" alt="" />
+              <span class="text-lg">Activity Log</span>
+            </div>
+            <button
+              class="mt-3 cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+            >
+              Clear History
+            </button>
+          </div>
+        </section>
+        <section class="flex flex-col gap-6 p-6">
+          <p class="rounded-md bg-red-100 p-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias natus
+            asperiores tempore architecto? Praesentium fugiat nemo quisquam quo
+            modi aspernatur, provident architecto accusantium a odit unde cumque
+            harum dolorum? Dolorem.
+          </p>
+          <p class="rounded-md bg-red-100 p-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias natus
+            asperiores tempore architecto? Praesentium fugiat nemo quisquam quo
+            modi aspernatur, provident architecto accusantium a odit unde cumque
+            harum dolorum? Dolorem.
+          </p>
+        </section>
+      </aside>
+    </main>
+    <script src="./scripts/bg-change.js"></script>
   </body>
 </html>

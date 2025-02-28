@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.head{
+    @apply text-2xl font-bold text-red-500;
+}
