@@ -5,11 +5,11 @@ function getRandomColor() {
     color += letters[Math.floor(Math.random() * 16)];
   }
   //   set opacity
-  color += "25";
+  color += "20";
   return color;
 }
 
-document.getElementById("theme-btn").addEventListener("click", function () {
-  const randomColor = getRandomColor();
+document.getElementById("theme-btn").addEventListener("click", (event) => {
+  let randomColor = getRandomColor();
   document.body.style.backgroundColor = randomColor;
 });

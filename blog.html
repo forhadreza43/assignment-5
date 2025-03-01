@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./output/output.css" />
   </head>
-  <body class="h-100vh bg-blueExtraLight" id="bg">
+  <body class="h-100vh bg-blueExtraLight">
     <header class="pt-6">
       <nav class="mx-auto max-w-[1535px] rounded-2xl bg-white px-6 py-4">
         <div class="flex items-center justify-between">
@@ -16,20 +16,12 @@
               <span class="font-thin">Dev</span>Board
             </h1>
           </div>
-          <div class="flex items-center gap-9">
-            <div
-              class="flex items-center rounded-full bg-blueExtraLight px-4 py-2"
-            >
-              <img class="mr-4 h-auto w-5" src="./assets/checkbox.png" alt="" />
-              <span class="text-3xl font-bold">22</span>
-            </div>
-            <img
-              class="h-auto w-12 cursor-pointer rounded-full bg-blueExtraLight p-2"
-              src="./assets/theme-btn.png"
-              alt=""
-              id="theme-btn"
-            />
-          </div>
+          <button
+            id="back-to-desk"
+            class="clear-btn cursor-pointer rounded-md bg-blue px-4 py-2 text-sm font-bold tracking-wide text-nowrap text-white" onclick="window.location.href = 'index.html'"
+          >
+            Back to Desk
+          </button>
         </div>
       </nav>
     </header>
@@ -93,5 +85,6 @@
       </div>
     </main>
     <script src="./scripts/bg-change.js"></script>
+    <script src="./scripts/btn-action.js"></script>
   </body>
 </html>
