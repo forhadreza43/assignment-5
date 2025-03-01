@@ -5,7 +5,7 @@ function getRandomColor() {
     color += letters[Math.floor(Math.random() * 16)];
   }
   //   set opacity
-  color += "20";
+  color += "30";
   return color;
 }
 

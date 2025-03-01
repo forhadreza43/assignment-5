@@ -18,7 +18,8 @@
           </div>
           <button
             id="back-to-desk"
-            class="clear-btn cursor-pointer rounded-md bg-blue px-4 py-2 text-sm font-bold tracking-wide text-nowrap text-white" onclick="window.location.href = 'index.html'"
+            class="clear-btn text-md cursor-pointer rounded-md bg-blue px-4 py-3 font-bold tracking-wide text-nowrap text-white"
+            onclick="window.location.href = 'index.html'"
           >
             Back to Desk
           </button>
@@ -36,10 +37,18 @@
             </h2>
           </div>
           <p class="p-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit
-            autem maiores adipisci, laudantium voluptatibus maxime delectus
-            accusantium. Accusantium nemo iusto atque ullam ducimus,
-            perspiciatis labore ipsa earum beatae praesentium.
+            In JavaScript, there are several ways to select elements in the DOM.
+            Some of them are: <br />
+            <code
+              ><ol class="pb-4 pl-4">
+                <li>getElementById()</li>
+                <li>getElementsByClassName()</li>
+                <li>getElementsByTagName()</li>
+                <li>querySelector()</li>
+                <li>querySelectorAll()</li>
+                <li>getElementsByName()</li>
+              </ol>
+            </code>
           </p>
         </div>
         <div class="rounded-2xl bg-white">
@@ -50,10 +59,12 @@
             </h2>
           </div>
           <p class="p-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit
-            autem maiores adipisci, laudantium voluptatibus maxime delectus
-            accusantium. Accusantium nemo iusto atque ullam ducimus,
-            perspiciatis labore ipsa earum beatae praesentium.
+            <strong>innerHTML:</strong> It returns or sets the HTML content
+            inside an element, including all HTML tags and text. <br />
+            <strong>innerText:</strong> It returns or sets the visible text
+            content of an element, excluding hidden elements. <br />
+            <strong>textContent:</strong> It returns or sets the text content of
+            an element, including all child nodes, but excluding HTML tags.
           </p>
         </div>
         <div class="rounded-2xl bg-white">
@@ -63,10 +74,12 @@
             </h2>
           </div>
           <p class="p-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit
-            autem maiores adipisci, laudantium voluptatibus maxime delectus
-            accusantium. Accusantium nemo iusto atque ullam ducimus,
-            perspiciatis labore ipsa earum beatae praesentium.
+            Event delegation is a technique where we can event listeners to a
+            parent element rather than attaching event listeners to individual
+            child elements. We can identify child through
+            <code class="font-bold">event.target</code>. This is useful when we
+            have a large number of child elements that we want to attach the
+            same event listener to all.
           </p>
         </div>
         <div class="rounded-2xl bg-white">
@@ -76,10 +89,27 @@
             </h2>
           </div>
           <p class="p-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit
-            autem maiores adipisci, laudantium voluptatibus maxime delectus
-            accusantium. Accusantium nemo iusto atque ullam ducimus,
-            perspiciatis labore ipsa earum beatae praesentium.
+            When an event occurs, it is first captured and handled by the target
+            element. After the event is handled by the target element, it
+            bubbles up through its ancestor elements in the DOM tree. This
+            process is called event bubbling. We can stop the event bubbling by
+            using <code class="font-bold">event.stopPropagation()</code>.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white">
+          <div class="border-b-1 border-dashed border-blueLight/50">
+            <h2 class="p-4 text-xl font-semibold">
+              Question-5: How do you create,add, and remove elements using
+              JavaScript?
+            </h2>
+          </div>
+          <p class="p-4">
+            To create an element, we can use the
+            <code class="font-bold">document.createElement()</code> method. To
+            add an element to the DOM, we can use the
+            <code class="font-bold">appendChild()</code> method. To remove an
+            element from the DOM, we can use the
+            <code class="font-bold">removeChild()</code> method.
           </p>
         </div>
       </div>
