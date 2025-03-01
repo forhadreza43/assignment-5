@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --color-teal: #00303c;
@@ -15,5 +14,24 @@ body {
 }
 
 .history {
-  @apply rounded-md bg-blueExtraLight p-3 text-sm;
+  @apply rounded-md bg-blueExtraLight p-3 text-sm font-light;
+}
+
+.task-organization {
+  @apply inline-block rounded-md bg-white px-4 py-2 text-sm font-light;
+}
+
+.task-title {
+  @apply my-4 text-lg font-medium;
+}
+.task-description {
+  @apply line-clamp-2 h-10 overflow-hidden text-sm font-light text-teal/70;
+}
+
+.task-complete-btn {
+  @apply rounded-md bg-blue px-4 py-2 text-sm font-light text-nowrap text-white;
+}
+
+.task-card-footer {
+  @apply flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4;
 }

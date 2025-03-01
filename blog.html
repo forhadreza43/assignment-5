@@ -4,21 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./output/output.css" />
   </head>
   <body class="h-100vh bg-blueExtraLight">
     <header class="pt-6">
-      <nav class="mx-auto max-w-[1535px] rounded-2xl bg-white px-6 py-4">
+      <nav class="mx-auto max-w-7xl rounded-2xl bg-white px-6 py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <img class="mr-3 h-auto w-9" src="./assets/logo.png" alt="" />
-            <h1 class="text-4xl font-bold">
-              <span class="font-thin">Dev</span>Board
+            <h1 class="text-3xl font-bold">
+              <span class="font-extralight">Dev</span>Board
             </h1>
           </div>
           <button
             id="back-to-desk"
-            class="clear-btn text-md cursor-pointer rounded-md bg-blue px-4 py-3 font-bold tracking-wide text-nowrap text-white"
+            class="clear-btn text-md cursor-pointer rounded-md bg-blue px-4 py-3 font-bold text-nowrap text-white"
             onclick="window.location.href = 'index.html'"
           >
             Back to Desk
@@ -26,21 +32,21 @@
         </div>
       </nav>
     </header>
-    <main class="mx-auto mt-6 grid max-w-[1535px]">
+    <main class="mx-auto mt-6 grid max-w-7xl">
       <h1 class="mb-6 text-center text-xl font-bold">Blogs</h1>
       <div class="flex flex-col gap-6 pb-20">
         <div class="rounded-2xl bg-white">
           <div class="border-b-1 border-dashed border-blueLight/50">
-            <h2 class="p-4 text-xl font-semibold">
+            <h2 class="p-4 text-lg font-semibold">
               Question-1: What are the different ways to select an element in
               the DOM?
             </h2>
           </div>
-          <p class="p-4">
+          <p class="p-4 opacity-90">
             In JavaScript, there are several ways to select elements in the DOM.
             Some of them are: <br />
             <code
-              ><ol class="pb-4 pl-4">
+              ><ol class="pb-4 pl-4 opacity-90">
                 <li>getElementById()</li>
                 <li>getElementsByClassName()</li>
                 <li>getElementsByTagName()</li>
@@ -53,12 +59,12 @@
         </div>
         <div class="rounded-2xl bg-white">
           <div class="border-b-1 border-dashed border-blueLight/50">
-            <h2 class="p-4 text-xl font-semibold">
+            <h2 class="p-4 text-lg font-semibold">
               Question-2: What are the different between innerHTML, innerText,
               and textContent?
             </h2>
           </div>
-          <p class="p-4">
+          <p class="p-4 opacity-90">
             <strong>innerHTML:</strong> It returns or sets the HTML content
             inside an element, including all HTML tags and text. <br />
             <strong>innerText:</strong> It returns or sets the visible text
@@ -69,11 +75,11 @@
         </div>
         <div class="rounded-2xl bg-white">
           <div class="border-b-1 border-dashed border-blueLight/50">
-            <h2 class="p-4 text-xl font-semibold">
+            <h2 class="p-4 text-lg font-semibold">
               Question-3: What is the event delegation in the DOM?
             </h2>
           </div>
-          <p class="p-4">
+          <p class="p-4 opacity-90">
             Event delegation is a technique where we can event listeners to a
             parent element rather than attaching event listeners to individual
             child elements. We can identify child through
@@ -84,11 +90,11 @@
         </div>
         <div class="rounded-2xl bg-white">
           <div class="border-b-1 border-dashed border-blueLight/50">
-            <h2 class="p-4 text-xl font-semibold">
+            <h2 class="p-4 text-lg font-semibold">
               Question-4: What is event bubbling in the DOM?
             </h2>
           </div>
-          <p class="p-4">
+          <p class="p-4 opacity-90">
             When an event occurs, it is first captured and handled by the target
             element. After the event is handled by the target element, it
             bubbles up through its ancestor elements in the DOM tree. This
@@ -98,12 +104,12 @@
         </div>
         <div class="rounded-2xl bg-white">
           <div class="border-b-1 border-dashed border-blueLight/50">
-            <h2 class="p-4 text-xl font-semibold">
+            <h2 class="p-4 text-lg font-semibold">
               Question-5: How do you create,add, and remove elements using
               JavaScript?
             </h2>
           </div>
-          <p class="p-4">
+          <p class="p-4 opacity-90">
             To create an element, we can use the
             <code class="font-bold">document.createElement()</code> method. To
             add an element to the DOM, we can use the

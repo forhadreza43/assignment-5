@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output/output.css" />
   </head>
   <body class="h-100vh bg-blueExtraLight">
     <header class="pt-6">
-      <nav class="mx-auto max-w-[1535px] rounded-2xl bg-white px-6 py-4">
+      <nav class="mx-auto max-w-7xl rounded-2xl bg-white px-6 py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <img class="mr-3 h-auto w-9" src="./assets/logo.png" alt="" />
-            <h1 class="text-4xl font-bold">
-              <span class="font-thin">Dev</span>Board
+            <h1 class="text-3xl font-bold">
+              <span class="font-extralight">Dev</span>Board
             </h1>
           </div>
           <div class="flex items-center gap-9">
@@ -21,7 +24,7 @@
               class="flex items-center rounded-full bg-blueExtraLight px-4 py-2"
             >
               <img class="mr-4 h-auto w-5" src="./assets/checkbox.png" alt="" />
-              <span class="text-3xl font-bold" id="completed-task">0</span>
+              <span class="text-2xl font-bold" id="completed-task">0</span>
             </div>
             <img
               class="h-auto w-12 cursor-pointer rounded-full bg-blueExtraLight p-2"
@@ -33,12 +36,12 @@
         </div>
       </nav>
     </header>
-    <main class="mx-auto mt-6 grid max-w-[1535px] grid-cols-4 gap-6 pb-20">
+    <main class="mx-auto mt-6 grid max-w-7xl grid-cols-4 gap-6 pb-20">
       <section class="col-start-1 col-end-4 rounded-2xl bg-white">
         <section
           class="flex gap-6 border-b-1 border-dashed border-b-blue/20 p-6"
         >
-          <div class="flex-1 rounded-2xl bg-blueExtraLight">
+          <div class="flex-2 rounded-2xl bg-blueExtraLight">
             <div class="flex items-center p-6">
               <span
                 class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
@@ -47,22 +50,22 @@
               </span>
               <div>
                 <p class="font-medium text-nowrap">Task Assigned</p>
-                <p class="text-3xl font-bold" id="total-task">6</p>
+                <p class="text-2xl font-bold" id="total-task">6</p>
               </div>
             </div>
           </div>
 
           <div
-            class="flex flex-2 cursor-pointer items-center rounded-2xl bg-gradient-to-l from-blueLight to-blue p-6 clear-btn" id="view-blog" onclick="window.location.href = 'blog.html'"
+            class="flex flex-3 cursor-pointer items-center rounded-2xl bg-gradient-to-l from-blueLight to-blue p-6 clear-btn" id="view-blog" onclick="window.location.href = 'blog.html'"
           >
             <img class="mr-4 h-auto w-15" src="./assets/board.png" alt="" id="ap"/>
-            <h3 class="text-2xl font-medium text-white" >
+            <h3 class="text-lg font-medium text-white" >
               Discover Something <br />
               New Today!
             </h3>
           </div>
 
-          <div class="flex-1 rounded-2xl bg-blueExtraLight">
+          <div class="flex-2 rounded-2xl bg-blueExtraLight">
             <div class="flex items-center p-6">
               <span
                 class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
@@ -70,8 +73,8 @@
                 <img class="h-auto w-5" src="./assets/calender.png" alt="" />
               </span>
               <div>
-                <p class="text-xl" id="day">Wed,</p>
-                <p class="text-xl font-bold" id="month">Jul 28 2025</p>
+                <p class="text-lg" id="day">Wed,</p>
+                <p class="text-lg font-bold" id="month">Jul 28 2025</p>
               </div>
             </div>
           </div>
@@ -79,57 +82,56 @@
         <section class="grid grid-cols-3 gap-6 p-6">
           <!-- !Fix Mobile  -->
           <div class="rounded-2xl bg-blueExtraLight p-5">
-            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+            <span class="task-organization"
               >ShopEase</span
             >
-            <h2 class="my-4 text-xl font-medium">Fix Mobile Button Issue</h2>
+            <h2 class="task-title">Fix Mobile Button Issue</h2>
 
             <div class="mb-4 rounded-md bg-white p-4">
               <div
-                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+                class="task-description"
               >
-                Debug using Chrome DevTools, check for overlapping elements, and
+                Debug by Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </div>
             </div>
             <div
-              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+              class="task-card-footer"
             >
               <div>
                 <p class="text-sm opacity-80">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
               <button
-                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
-              >
+                class="task-complete-btn cursor-pointer">
                 Completed
               </button>
             </div>
           </div>
           <!--! Dark Mode -->
           <div class="rounded-2xl bg-blueExtraLight p-5">
-            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+            <span class="task-organization"
               >CloudSync</span
             >
-            <h2 class="my-4 text-xl font-medium">Add Dark Mode</h2>
+            <h2 class="task-title">Add Dark Mode</h2>
 
             <div class="mb-4 rounded-md bg-white p-4">
               <div
-                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+                class="task-description"
               >
                 Store the user's preference in localStorage, update CSS
                 variables dynamically, and apply a smooth transition effect.
               </div>
             </div>
             <div
-              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+              class="task-card-footer"
             >
               <div>
                 <p class="text-sm opacity-80">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
               <button
-                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+                class="task-complete-btn cursor-pointer"
               >
                 Completed
               </button>
@@ -137,28 +139,28 @@
           </div>
           <!-- !Optimize Home page -->
           <div class="rounded-2xl bg-blueExtraLight p-5">
-            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+            <span class="task-organization"
               >SwiftPay</span
             >
-            <h2 class="my-4 text-xl font-medium">Optimize Home page </h2>
+            <h2 class="task-title">Optimize Home page </h2>
 
             <div class="mb-4 rounded-md bg-white p-4">
               <div
-                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+                class="task-description"
               >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </div>
             </div>
             <div
-              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+              class="task-card-footer"
             >
               <div>
                 <p class="text-sm opacity-80">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
               <button
-                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+                class="task-complete-btn cursor-pointer"
               >
                 Completed
               </button>
@@ -167,28 +169,28 @@
 
           <!-- ! add Emoji Section -->
           <div class="rounded-2xl bg-blueExtraLight p-5">
-            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+            <span class="task-organization"
               >Meta</span
             >
-            <h2 class="my-4 text-xl font-medium">Add new emoji 🤲</h2>
+            <h2 class="task-title">Add new emoji 🤲</h2>
 
             <div class="mb-4 rounded-md bg-white p-4">
               <div
-                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+                class="task-description"
               >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </div>
             </div>
             <div
-              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+              class="task-card-footer"
             >
               <div>
                 <p class="text-sm opacity-80">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
               <button
-                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+                class="task-complete-btn cursor-pointer"
               >
                 Completed
               </button>
@@ -196,28 +198,28 @@
           </div>
           <!-- ! Integrate OpenAI API  -->
           <div class="rounded-2xl bg-blueExtraLight p-5">
-            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+            <span class="task-organization"
               >Google LLC</span
             >
-            <h2 class="my-4 text-xl font-medium">Integrate OpenAI API</h2>
+            <h2 class="task-title">Integrate OpenAI API</h2>
 
             <div class="mb-4 rounded-md bg-white p-4">
               <div
-                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+                class="task-description"
               >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </div>
             </div>
             <div
-              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+              class="task-card-footer"
             >
               <div>
                 <p class="text-sm opacity-80">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
               <button
-                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+                class="task-complete-btn  cursor-pointer"
               >
                 Completed
               </button>
@@ -225,28 +227,28 @@
           </div>
           <!-- !Improve Job searching  -->
           <div class="rounded-2xl bg-blueExtraLight p-5">
-            <span class="inline-block rounded-md bg-white px-4 py-2 text-sm"
+            <span class="task-organization"
               >Glassdoor</span
             >
-            <h2 class="my-4 text-xl font-medium">Improve Job searching</h2>
+            <h2 class="task-title">Improve Job searching</h2>
 
             <div class="mb-4 rounded-md bg-white p-4">
               <div
-                class="line-clamp-2 h-10 overflow-hidden text-sm text-black/50"
+                class="task-description"
               >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </div>
             </div>
             <div
-              class="flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4"
+              class="task-card-footer"
             >
               <div>
                 <p class="text-sm opacity-80">Deadline</p>
                 <h3 class="font-semibold">21 March 2025</h3>
               </div>
               <button
-                class="cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white"
+                class="task-complete-btn cursor-pointer"
               >
                 Completed
               </button>
@@ -262,7 +264,7 @@
               <span class="text-lg">Activity Log</span>
             </div>
             <button
-              class="clear-btn mt-3 cursor-pointer rounded-md bg-blue px-4 py-2 text-sm tracking-wide text-nowrap text-white" id="clear-history"
+              class="clear-btn mt-3 task-complete-btn cursor-pointer" id="clear-history"
             >
               Clear History
             </button>

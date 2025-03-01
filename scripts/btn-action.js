@@ -51,7 +51,6 @@ function getCurrentTime() {
 }
 
 // calender
-
 let now = new Date();
 const options = { month: "short", day: "numeric", year: "numeric" };
 let formattedDate = now.toLocaleDateString("en-US", options);
