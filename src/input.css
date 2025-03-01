@@ -5,6 +5,7 @@
   --font-poppins: "Poppins", sans-serif;
   --color-teal: #00303c;
   --color-blue: #3752fd;
+  --color-blueDark: #0245cc;
   --color-blueLight: #9ba8f8;
   --color-blueExtraLight: #f4f7ff;
 }
@@ -29,9 +30,17 @@ body {
 }
 
 .task-complete-btn {
-  @apply rounded-md bg-blue px-4 py-2 text-sm font-light text-nowrap text-white;
+  @apply rounded-md bg-blue px-4 py-2 text-sm font-light text-nowrap text-white shadow-sm hover:bg-blueDark hover:duration-300;
 }
 
 .task-card-footer {
   @apply flex items-center justify-between border-t-1 border-dashed border-blue/20 pt-4;
+}
+
+.task-card {
+  @apply rounded-2xl p-5 shadow-sm;
+}
+
+.before {
+  @apply before:absolute before:top-0 before:right-0 before:-z-1 before:h-full before:w-0 before:bg-blue before:duration-500 before:content-[""] hover:before:w-full;
 }

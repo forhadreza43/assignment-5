@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output/output.css" />
+    <style>
+      .target::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        background: red;
+        transition: 0.5s;
+      }
+      .target:hover::before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="relative">
+    <div
+      class="target w-50 relative z-0 m-20 h-20 border border-gray-500 bg-gradient-to-r from-blue-500 to-blue-800"
+    ></div>
+    <div
+      class="before w-50 before:bg-blue relative m-20 h-20 border border-gray-500 bg-gradient-to-r from-blue-500 to-blue-800 before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 before:content-none hover:before:w-full"
+    ></div>
+  </body>
+</html>

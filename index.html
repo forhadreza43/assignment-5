@@ -11,7 +11,7 @@
   </head>
   <body class="h-100vh bg-blueExtraLight">
     <header class="pt-6">
-      <nav class="mx-auto max-w-7xl rounded-2xl bg-white px-6 py-4">
+      <nav class="mx-auto max-w-7xl rounded-2xl bg-white px-6 py-4 shadow-sm">
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <img class="mr-3 h-auto w-9" src="./assets/logo.png" alt="" />
@@ -27,7 +27,7 @@
               <span class="text-2xl font-bold" id="completed-task">0</span>
             </div>
             <img
-              class="h-auto w-12 cursor-pointer rounded-full bg-blueExtraLight p-2"
+              class="h-auto w-12 cursor-pointer rounded-full bg-blueExtraLight p-2 hover:rotate-360 hover:duration-900"
               src="./assets/theme-btn.png"
               alt=""
               id="theme-btn"
@@ -37,11 +37,11 @@
       </nav>
     </header>
     <main class="mx-auto mt-6 grid max-w-7xl grid-cols-4 gap-6 pb-20">
-      <section class="col-start-1 col-end-4 rounded-2xl bg-white">
+      <section class="col-start-1 col-end-4 rounded-2xl bg-white shadow-sm">
         <section
           class="flex gap-6 border-b-1 border-dashed border-b-blue/20 p-6"
         >
-          <div class="flex-2 rounded-2xl bg-blueExtraLight">
+          <div class="flex-2 rounded-2xl bg-blueExtraLight shadow-sm">
             <div class="flex items-center p-6">
               <span
                 class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
@@ -56,7 +56,7 @@
           </div>
 
           <div
-            class="flex flex-3 cursor-pointer items-center rounded-2xl bg-gradient-to-l from-blueLight to-blue p-6 clear-btn" id="view-blog" onclick="window.location.href = 'blog.html'"
+            class="shadow-sm overflow-hidden z-1 flex flex-3 cursor-pointer relative items-center rounded-2xl bg-gradient-to-l from-blueLight to-blue p-6 clear-btn before" id="view-blog" onclick="window.location.href = 'blog.html'"
           >
             <img class="mr-4 h-auto w-15" src="./assets/board.png" alt="" id="ap"/>
             <h3 class="text-lg font-medium text-white" >
@@ -65,7 +65,7 @@
             </h3>
           </div>
 
-          <div class="flex-2 rounded-2xl bg-blueExtraLight">
+          <div class="flex-2 rounded-2xl bg-blueExtraLight shadow-sm">
             <div class="flex items-center p-6">
               <span
                 class="mr-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white"
@@ -81,7 +81,7 @@
         </section>
         <section class="grid grid-cols-3 gap-6 p-6">
           <!-- !Fix Mobile  -->
-          <div class="rounded-2xl bg-blueExtraLight p-5">
+          <div class="bg-blueExtraLight task-card">
             <span class="task-organization"
               >ShopEase</span
             >
@@ -109,7 +109,7 @@
             </div>
           </div>
           <!--! Dark Mode -->
-          <div class="rounded-2xl bg-blueExtraLight p-5">
+          <div class="bg-blueExtraLight task-card">
             <span class="task-organization"
               >CloudSync</span
             >
@@ -138,7 +138,7 @@
             </div>
           </div>
           <!-- !Optimize Home page -->
-          <div class="rounded-2xl bg-blueExtraLight p-5">
+          <div class="bg-blueExtraLight task-card">
             <span class="task-organization"
               >SwiftPay</span
             >
@@ -168,7 +168,7 @@
           </div>
 
           <!-- ! add Emoji Section -->
-          <div class="rounded-2xl bg-blueExtraLight p-5">
+          <div class="bg-blueExtraLight task-card">
             <span class="task-organization"
               >Meta</span
             >
@@ -197,7 +197,7 @@
             </div>
           </div>
           <!-- ! Integrate OpenAI API  -->
-          <div class="rounded-2xl bg-blueExtraLight p-5">
+          <div class="bg-blueExtraLight task-card">
             <span class="task-organization"
               >Google LLC</span
             >
@@ -226,7 +226,7 @@
             </div>
           </div>
           <!-- !Improve Job searching  -->
-          <div class="rounded-2xl bg-blueExtraLight p-5">
+          <div class="bg-blueExtraLight task-card">
             <span class="task-organization"
               >Glassdoor</span
             >
@@ -256,7 +256,7 @@
           </div>
         </section>
       </section>
-      <aside class="col-start-4 col-end-5 rounded-2xl bg-white">
+      <aside class="col-start-4 col-end-5 rounded-2xl bg-white shadow-sm">
         <section class="border-b-1 border-dashed border-b-blue/20 p-6">
           <div class="mx-auto w-full text-center">
             <div class="flex items-center justify-center">
