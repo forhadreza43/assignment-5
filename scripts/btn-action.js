@@ -58,3 +58,13 @@ document.getElementById("day").innerText = now.toLocaleDateString("en-US", {
   weekday: "short",
 });
 document.getElementById("month").innerText = formattedDate;
+
+document.querySelectorAll(".task-description").forEach((element) => {
+  element.addEventListener("click", () => {
+    toggleExpand(element);
+  });
+});
+
+function toggleExpand(element) {
+  element.classList.toggle("expanded");
+}
